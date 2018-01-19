@@ -144,9 +144,6 @@ func (c *SSOClient) sendRequest(action string, options map[string]interface{}) (
 		}
 	}
 
-	// TODO remove me
-	fmt.Println(string(responseBody))
-
 	var v interface{}
 
 	err = json.Unmarshal(responseBody, &v)
